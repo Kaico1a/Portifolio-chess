@@ -83,7 +83,7 @@ public class ChessMatch {
 
         if (testCheck(currentPlayer)) {
             undoMove(source, target, capturedPiece);
-            throw new ChessException("Você não pode se colocar em cheque!");
+            throw new ChessException("Você não pode se colocar em xeque!");
         }
 
         ChessPiece movedPiece = (ChessPiece)board.piece(target);

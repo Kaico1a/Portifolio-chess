@@ -56,11 +56,11 @@ public class UI {
         if (!chessMatch.getCheckMate()){
             System.out.println("Esperando jogador: " + chessMatch.getCurrentPlayer());
             if (chessMatch.getCheck()){
-                System.out.println("CHEQUE!!");
+                System.out.println("XEQUE!!");
             }
         }
         else{
-            System.out.println("CHEQUEMATE");
+            System.out.println("XEQUEMATE");
             System.out.println("Vencedor: " + chessMatch.getCurrentPlayer());
         }
     }
@@ -113,6 +113,7 @@ public class UI {
 
             for (int j = 0; j < pieces.length; j++) {
                 printPiece(pieces[i][j], possibleMoves[i][j]);
+                System.out.print(" ");
             }
             System.out.println();
         }
